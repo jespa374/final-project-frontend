@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -10,4 +10,699 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+} */
+
+body {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: white;
+}
+
+.nav-tab {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.profile-card {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.social-media-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+
+.social-media-icon {
+  border: 3px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  width: 15px;
+  height: 15px;
+  margin: 2px;
+}
+
+.icon-linkedin {
+  background-image: url("./assets/linkedin.svg");
+  width: 30%;
+  height: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  cursor: pointer;
+  border: #ffffff solid 3px;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 20px;
+}
+
+.icon-stackoverflow {
+  background-image: url("./assets/stackoverflow.svg");
+  width: 30%;
+  height: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  cursor: pointer;
+  border: #ffffff solid 3px;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 20px; 
+}
+
+.icon-github {
+  background-image: url("./assets/github.svg");
+  width: 30%;
+  height: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  cursor: pointer;
+  border: #ffffff solid 3px;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 20px; 
+}
+.top-section {
+  background-image: url("./assets/hot-pink.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 400px;
+  margin-top: 100px 100px 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.heading-portfolio {
+  font-family: 'Roboto',sans-serif;
+  font-size: 13px;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+}
+
+.name {
+  font-family: 'Roboto',sans-serif;
+  font-weight: 1px;
+}
+
+.heading-frontend-developer {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 40px;
+  color: white;
+  margin-bottom: auto;
+}
+
+.heading-system-specialist {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 22px;
+  color: white;
+}
+
+.profile-card-text-container {
+  width: 75%;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 135px;
+  height: 135px;
+  border: 3px solid white;
+  position: absolute;
+  right: 30px;
+  bottom: -25px;
+  z-index: 1;
+}
+
+.line-bullet {
+  margin-right: 5px;
+}
+
+.summary-section {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 40px 30px;
+}
+
+.summary-description {
+  font-family: 'Montserrat',sans-serif;
+  margin-top: 5px;
+  line-height: 25px;
+}
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: 'Montserrat',sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.section-heading {
+  border: 1px solid red;
+  display: inline;
+  padding: 2px;
+  background-color: red;
+  color: white;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 15px;
+}
+
+.section-subheading {
+  color: red;
+  font-family: 'Montserrat',sans-serif;
+}
+
+.featured-projects-section {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.featured-projects-section h3 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-content-container {
+  padding: 0 20px;
+}
+
+.see-more-icon {
+  color: red;
+  text-decoration: underline;
+}
+
+.project-image {
+  height: 175px;
+  width: 100%;
+}
+
+.projects-subheading {
+  color: red;
+  font-weight: bold;
+  font-family: 'Roboto',sans-serif;
+  font-size: 13px;
+}
+
+.projects-paragraph {
+  font-family: 'Roboto',sans-serif;
+  font-size: 13px;
+}
+
+.skill-box {
+  width: 100px;
+  border: 1px solid pink;
+  background-color: pink;
+  font-family: 'Roboto',sans-serif;
+  padding: 0 10px;
+  font-size: 10px;
+  text-align: center;
+  display: inline;
+}
+
+.other-projects {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  padding: 20px;
+}
+
+.section-subheading {
+  display: flex;
+  justify-content: center;
+}
+
+.thoughts {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thoughts-image {
+  margin-top: 40px;
+  width: 70%;
+  height: 150px;
+}
+
+.date-heading {
+  font-family: 'Roboto',sans-serif;
+  font-size: 12px;
+  color: red;
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+
+.latest-thought-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-thought-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.latest-thought-text-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+.latest-thought-text-container h3 {
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+}
+
+.thoughts-section p {
+  font-family: 'Roboto',sans-serif;
+  font-size: 13px;
+  width: 75%;
+}
+
+.more-thoughts-subsection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.more-thoughts-subsection h3 {
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+  margin-right: 42px;
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+
+.skills {
+  background-color: lightgray;
+  margin-bottom: 45px;
+}
+.section-heading-container {
+  display: flex;
+  justify-content: center;
+}
+
+.skill-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skills h4 {
+  color: red;
+  font-family: 'Roboto',sans-serif;
+  text-align: center;
+  font-size: 13px;
+}
+
+.skills ul {
+  list-style-type: none;
+  color: black;
+  font-family: 'Roboto',sans-serif;
+  font-weight: regular;
+  padding: 0;
+}
+
+.skills li {
+  font-weight: lighter;
+  font-size: 13px;
+}
+
+.skill-card {
+  width: 50%;
+  text-align: center;
+}
+
+.skill-card li {
+  list-style-type: none;
+  color: black;
+  font-family: 'Roboto',sans-serif;
+  font-weight: regular;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media-icons-medium {
+  border: 3px solid red;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.contact-section {
+  background-color: blue;
+}
+
+.contact-heading {
+  font-family: 'Roboto',sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.contact-name {
+  font-weight: bold;
+  font-family: 'Roboto',sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+}
+
+.contact-info {
+  font-family: 'Roboto',sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+}
+
+.contact-section a {
+  display: block;
+  text-decoration: none;
+  padding-bottom: 50px;
+}
+
+.contact-form textarea {
+  width: 100%;
+  border: 0;
+  background: #2b2b2b;
+  height: 50px;
+  font-size: 16px;
+  color: #8d8d8d;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 150px;
+}
+
+/*Tablet view********************************************************************************************/
+@media (min-width: 768px) and (max-width: 899px) {
+  .top-section {
+   height: 300px;
+   position: relative;
+  }
+
+  .heading-portfolio {
+   font-size: 15px;
+  }
+
+  .heading-frontend-developer {
+   font-size: 40px;
+  }
+
+ .profile-image {
+   width: 150px;
+   height: 150px;
+   bottom: -12px;
+  }
+
+.project-image {
+  height: 200px;
+  }
+
+.summary-section {
+  height: 200px;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+ .summary-description {
+  font-family: 'Montserrat',sans-serif;
+  margin-top: 5px;
+  line-height: 25px;
+  padding-top: 20px;
+  width: 85%;
+  align-items: flex-end;
+  }
+
+.section-heading {
+  font-size: 17px;
+  }
+
+.tech {
+   font-size: 15px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+  }
+
+.featured-projects-section {
+   padding: 30px;
+  }
+
+.projects-subheading {
+  font-size: 15px;
+  }
+
+.project-card {
+  width: 70%
+  }
+
+.projects-paragraph {
+  font-size: 15px;
+  }
+
+.other-projects {
+  padding: 30px;
+  }
+
+.thoughts p {
+  font-size: 15px;
+  }
+
+.date-heading {
+  font-size: 15px;
+  }
+
+.latest-thought-container {
+  display: flex;
+  flex-direction: row;
+  }
+
+.latest-thought-card {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  }
+
+.more-thoughts-subsection {
+  width: 100%;
+  }
+
+.more-thoughts-subsection h3 {
+  text-align: center;
+  }
+
+.skill-card {
+  width: 25%
+  }
+
+
+.skills h4 {
+  font-size: 15px;
+  }
+
+.skills li {
+  font-size: 15px;
+  }
+
+.contact-name {
+  font-size: 15px;
+  }
+.contact-info {
+  font-size: 15px;
+  }
+}
+
+/*Desktop view**************************************************************************************/
+
+@media (min-width: 900px) {
+  .top-section {
+      height: 400px;
+    }
+
+  .heading-portfolio {
+      font-size: 15px;
+  }
+  .heading-frontend-developer {
+      font-size: 40px;
+    }
+
+  .heading-system-specialist {
+      font-size: 23px;
+      width: 50%;
+    }
+  
+  .profile-image {
+      width: 200px;
+      height: 200px;
+      right: 100px;
+      bottom: -16px;
+  }
+
+  .summary-section {
+      height: 200px;
+      align-items: flex-end;
+      flex-direction: column;
+      justify-content: center;
+   }
+  
+  .summary-description {
+      font-family: 'Montserrat',sans-serif;
+      width: 85%;
+      align-items: flex-end;
+      line-height: 30px;
+      font-size: 18px;
+      padding: 20px;
+   }
+  
+  .section-heading {
+      font-size: 25px;
+  }
+
+  .tech {
+      font-size: 17px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+  }
+  
+  .featured-projects-section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;   
+      padding: 40px;
+  }
+
+  .featured-projects-section h2{
+      margin-top: 0;
+      margin-right: 208px;
+      margin-left: 200px;
+  }
+
+  .project-card {
+      width: 50%
+  }
+
+  .project-image {
+      height: 200px;
+  }
+
+  .projects-subheading {
+      font-size: 17px;
+  }
+
+  .projects-paragraph {
+      font-size: 17px;
+  }
+
+  .featured-projects-section h3 {
+      margin-top: 20px;
+      text-align: center;
+      margin-right: 209px;
+      margin-left: 200px;
+  }
+
+  .other-projects {
+      padding: 40px;
+  }
+
+  .thoughts-image {
+      width: 300px;
+      height: 200px;
+  }
+
+  .thoughts p {
+      font-size: 17px;
+  }
+
+  .latest-thought-container {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .latest-thought-card {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+  }
+
+  .date-heading {
+      font-size: 17px;
+  }
+
+  .more-thoughts-subsection {
+      width: 100%;
+  }
+
+  .more-thoughts-subsection h3 {
+    text-align: center;
+  }
+
+  .skill-card {
+      width: 25%
+  }
+
+  .skills h4 {
+      font-size: 17px;
+  }
+  
+  .skills li {
+      font-size: 17px;
+  }
+ 
+  .contact-name {
+      font-size: 17px;
+  }
+  .contact-info {
+      font-size: 17px;
+  }
+
 }
