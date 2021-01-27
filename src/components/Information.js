@@ -4,7 +4,6 @@ import LinkedinRed from '../assets/linkedinred.svg';
 import GithubRed from '../assets/githubred.svg';
 import StackoverflowRed from '../assets/stackoverflowred.svg';
 
-
 const Information = () => {
 
 	return (
