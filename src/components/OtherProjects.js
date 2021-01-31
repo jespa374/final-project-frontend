@@ -9,9 +9,9 @@ const OtherProjects = ({ ...project }) => {
 					<div className="project-content-container">
 						<p className="projects-paragraph"><span className="projects-subheading">{project.title}</span>{project.description}<span className="see-more-icon">>></span>
 							<div className="skill-box-container">
-								<div className="skill-box">HTML5</div>
-								<div className="skill-box">CSS3</div>
-								<div className="skill-box">JavaScript ES6</div>
+								{project.tech.map(tech => 
+									<div className="skill-box">{tech}</div>
+								)}
 							</div>
 						</p>
 					</div>

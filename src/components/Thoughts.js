@@ -43,4 +43,4 @@ const Thoughts = () => {
 
 export default Thoughts;
 
-	//replace buttons with a hrefs in line 29-32 for more thoughts links and for the see more button in line 22
+	

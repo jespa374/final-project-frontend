@@ -8,10 +8,10 @@ const ProjectCard = ( { projectTitle, projectImage, projectUrl, projectDescripti
 				<div className="project-content-container">
 					<img className="project-image" src={projectImage} alt="project movie site"/>
 					<p className="projects-paragraph"><span className="projects-subheading">{projectTitle}</span> {projectDescription}<span className="see-more-icon">>></span>
-						<div className="skill-box-container">
-							<div className="skill-box">REACT</div>
-							<div className="skill-box">CSS3</div>
-							<div className="skill-box">JavaScript ES6</div>
+						<div className="skill-box-container">	
+							{projectTech.map(tech => 
+								<div className="skill-box">{tech}</div>
+							)}
 						</div>
 					</p>
 				</div>
