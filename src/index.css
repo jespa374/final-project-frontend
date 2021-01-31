@@ -237,11 +237,16 @@ a {
   font-weight: bold;
   font-family: 'Roboto',sans-serif;
   font-size: 13px;
+  padding-right: 10px;
 }
 
 .projects-paragraph {
   font-family: 'Roboto',sans-serif;
   font-size: 13px;
+}
+
+.skill-box-container {
+  padding: 10px;
 }
 
 .skill-box {
@@ -288,11 +293,16 @@ a {
   color: red;
   margin-left: 5px;
   margin-bottom: 0;
+  padding-right: 10px;
 }
 
 .latest-thought-container {
   display: flex;
   flex-direction: column;
+}
+
+.latest-thought {
+  width: 75%;
 }
 
 .latest-thought-card {
@@ -429,6 +439,26 @@ a {
   padding-bottom: 50px;
 }
 
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form-header {
+  font-family: 'Roboto',sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.contact-form input {
+  width: 200px;
+}
+
 .contact-form textarea {
   width: 100%;
   border: 0;
@@ -439,6 +469,10 @@ a {
   padding: 20px;
   box-sizing: border-box;
   min-height: 150px;
+}
+
+.contact-form ul {
+  list-style-type: none;
 }
 
 /*Tablet view********************************************************************************************/
@@ -653,6 +687,7 @@ a {
 
   .other-projects {
       padding: 40px;
+      align-items: center;
   }
 
   .thoughts-image {
@@ -662,6 +697,7 @@ a {
 
   .thoughts p {
       font-size: 17px;
+      width: 50%;
   }
 
   .latest-thought-container {

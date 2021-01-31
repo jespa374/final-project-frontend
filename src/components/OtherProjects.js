@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OtherProjects = (...project) => {
+const OtherProjects = ({ ...project }) => {
 	
 	return (
 		<>

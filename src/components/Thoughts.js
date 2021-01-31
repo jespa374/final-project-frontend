@@ -5,7 +5,6 @@ import ThoughtCard from '../components/ThoughtCard';
 import MoreThoughts from './MoreThoughts';
 
 const Thoughts = () => {
-
 	const [thoughts, setThoughts] = useState([]);
 
 	const getThoughts = () => {
@@ -13,7 +12,7 @@ const Thoughts = () => {
 		.then(res => res.json())
 		.then(json => setThoughts(json))
 		.catch(error => console.error(error)) 
-	}
+	};
 
 	useEffect(getThoughts, []);
 	console.log(thoughts);
@@ -28,19 +27,18 @@ const Thoughts = () => {
 						{...thought}
 					/>
 				)}
-				 <article className="more-thoughts-subsection">
-				 <h3 className="section-subheading" tabindex="0">MORE THOUGHTS</h3>
-					{thoughts.filter(thought => !thought.isFeatured).map(thought =>
-						<MoreThoughts 
-							key={thought._id}
-							{...thought}
-						/>
-						)}
-				 </article>
-				
-		</div>	
-	</section>
-)};
+			</div>
+			<article className="more-thoughts-subsection">
+				<h3 className="section-subheading" tabindex="0">MORE THOUGHTS</h3>
+				{thoughts.filter(thought => !thought.isFeatured).map(thought =>
+					<MoreThoughts 
+						key={thought._id}
+						{...thought}
+					/>
+				)}
+			</article>	
+		</section>
+	)};
 
 
 export default Thoughts;

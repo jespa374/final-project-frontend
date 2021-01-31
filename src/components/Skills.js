@@ -14,7 +14,6 @@ const Skills = () => {
 	};
 
 	useEffect(getSkills, []);
-	console.log(skills);
 
 	return (
 		<section className="skills">
@@ -28,8 +27,8 @@ const Skills = () => {
 						{...skill}
 					/>
 				)}
-				</div>		
-		</section>
+			</div>		
+		</section>	
 	)};
 
 export default Skills;

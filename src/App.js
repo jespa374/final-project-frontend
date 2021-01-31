@@ -12,6 +12,7 @@ import Contact from 'pages/Contact';
 
 
 const App = () => {
+  
   return (
     <BrowserRouter>
       <Switch>
@@ -24,14 +25,13 @@ const App = () => {
           <Information />
         </Route>
         <Route path="/projects" exact>
-            <Projects />
+          <Projects />
         </Route>
         <Route path="/contact" exact>
           <Contact />
         </Route>
-    </Switch>
-  </BrowserRouter>
-  );
-};
+      </Switch>
+    </BrowserRouter>
+  )};
 
 export default App;
