@@ -15,7 +15,6 @@ const Thoughts = () => {
 	};
 
 	useEffect(getThoughts, []);
-	console.log(thoughts);
 	
 	return (
 		<section className="thoughts">
