@@ -11,8 +11,7 @@ const TopSectionCarousel = () => {
 
     return (
       <>
-        <Carousel>
-          <section className="top-section" tabindex="0">
+        <Carousel className="top-section" tabindex="0">
             <div className="social-media-container">
               <a href="https://www.linkedin.com/in/jessica-panditha-4b676210a/" tabindex="0" role="button" aria-pressed="false" target="_blank" rel="noopener noreferrer"><div className="icon-linkedin"></div></a>
               <a href="https://github.com/jespa374" tabindex="0" role="button" aria-pressed="false" target="_blank" rel="noopener noreferrer"><div className="icon-github"></div></a>
@@ -38,7 +37,6 @@ const TopSectionCarousel = () => {
 					    </div>
 					    <img src={ProfilePic} className="profile-image" alt="darkhaired girl in a polkadot blouse"/>
 				    </div>
-          </section>
           <Carousel.Item interval={1000}>
             <img
               className="top-section"
