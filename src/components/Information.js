@@ -14,6 +14,7 @@ const Information = () => {
 				<a href="https://github.com/jespa374" tabindex="0" role="button" aria-pressed="false" target="_blank" rel="noopener noreferrer"><img className="social-media-icons-medium" src={GithubRed} alt="Mediumsized GitHub icon in red"/></a>
 				<a href="https://stackoverflow.com/c/technigo/users/148" tabindex="0" role="button" aria-pressed="false" target="_blank" rel="noopener noreferrer"><img className="social-media-icons-medium" src={StackoverflowRed} alt="Mediumsized stackoverflow icon in red"/></a>
 			</div>
+			<button className="back-to-top-button">Back to top</button>
 		</section>
 	)};
 

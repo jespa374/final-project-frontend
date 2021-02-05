@@ -11,6 +11,7 @@ const FeaturedProjects = ({ ...project }) => {
 					projectUrl={project.url}
 					projectDescription={project.description}
 					projectTech={project.tech}
+					projectImageText={project.imageText}
 				/>
 			</>
 		)};
