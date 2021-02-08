@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { animateScroll as scroll } from 'react-scroll'; 
 
 import {MESSAGES_URL} from '../urls';
 
@@ -87,7 +88,7 @@ const Contact = () => {
 									onChange={e => setMessage(e.target.value)}
 								>
 								</textarea>
-								<input type="submit"/>
+								<input type="submit" onClick={() => scroll.scrollToTop()}/>
 							</form>
 						</div>
 				</footer>

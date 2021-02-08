@@ -55,6 +55,17 @@ body {
 
 .icon-linkedin {
   background-image: url("./assets/linkedin.svg");
+}
+
+.icon-stackoverflow {
+  background-image: url("./assets/stackoverflow.svg");
+}
+
+.icon-github {
+  background-image: url("./assets/github.svg");
+}
+
+.icon-linkedin, .icon-github, .icon-stackoverflow {
   width: 30%;
   height: 30%;
   background-repeat: no-repeat;
@@ -67,33 +78,6 @@ body {
   margin: 20px;
 }
 
-.icon-stackoverflow {
-  background-image: url("./assets/stackoverflow.svg");
-  width: 30%;
-  height: 30%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50%;
-  cursor: pointer;
-  border: #ffffff solid 3px;
-  border-radius: 50%;
-  padding: 15px;
-  margin: 20px; 
-}
-
-.icon-github {
-  background-image: url("./assets/github.svg");
-  width: 30%;
-  height: 30%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50%;
-  cursor: pointer;
-  border: #ffffff solid 3px;
-  border-radius: 50%;
-  padding: 15px;
-  margin: 20px; 
-}
 .top-section {
   margin: 0;
   width: 100%;
@@ -168,6 +152,54 @@ body {
   font-family: 'Montserrat',sans-serif;
   margin-top: 5px;
   line-height: 25px;
+}
+
+/*Animation Scroll down*/
+
+.down-arrow-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  margin-top: 109px;
+}
+
+.down-arrow {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  transform: rotate(45deg);
+  animation: animate 2s infinite;
+  margin: -10px;
+}
+
+.down-arrow:nth-child(1) {
+  animation-delay: -0.2s;
+  transform: rotate(45deg) translate(-20px, -20px);
+}
+
+.down-arrow:nth-child(2) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0%
+  {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50%
+  {
+    opacity: 1;
+  }
+  100%
+  {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
 }
 
 .tech {
@@ -355,9 +387,11 @@ a {
   margin-left: 70px;
 }
 
-.latest-thought-text-container h3 {
+.latest-thought-card h3 {
   font-family: 'Roboto',sans-serif;
   font-weight: bold;
+  margin-left: 40px;
+  font-size: 20px;
 }
 
 .thoughts-section p {
@@ -435,14 +469,36 @@ a {
   align-items: center;
 }
 
-.social-media-icons-medium {
-  border: 3px solid red;
+.for-more-links-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.icon-linkedin-red {
+  background-image: url("assets/linkedinred.svg");
+}
+
+.icon-github-red {
+  background-image: url("assets/githubred.svg");
+}
+
+.icon-stackoverflow-red {
+  background-image: url("assets/stackoverflowred.svg");
+}
+
+.icon-linkedin-red, .icon-github-red, .icon-stackoverflow-red {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  cursor: pointer;
+  border: red solid 3px;
   border-radius: 50%;
-  width: 25px;
-  height: 25px;
-  padding: 5px;
-  margin-top: 20px;
-  margin-right: 15px;
+  padding: 15px;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
 }
 
 .contact-section {

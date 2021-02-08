@@ -1,7 +1,13 @@
 import React from 'react';
 
-const ProjectCard = ( 
-	{ projectTitle, projectImage, projectUrl, projectDescription, projectTech, projectImageText  }) => {
+const ProjectCard = ({
+	projectTitle,
+	projectImage,
+	projectUrl,
+	projectDescription,
+	projectTech,
+	projectImageText
+}) => {
 
 	return (
 		<article className="project-card">
