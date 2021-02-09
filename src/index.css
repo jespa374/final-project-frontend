@@ -28,6 +28,7 @@ body {
 .nav-tab {
   font-size: 20px;
   margin: 10px;
+  text-decoration: none;
 }
 .profile-card {
   padding-left: 30px;
@@ -75,7 +76,7 @@ body {
   border: #ffffff solid 3px;
   border-radius: 50%;
   padding: 15px;
-  margin: 20px;
+  margin: 20px 5px;
 }
 
 .top-section {
@@ -109,6 +110,7 @@ body {
   font-size: 40px;
   color: white;
   margin-bottom: auto;
+  font-weight: bold;
 }
 
 .heading-system-specialist {
@@ -132,7 +134,7 @@ body {
   bottom: -25px;
   z-index: 1;
   right: 0;
-  top: 150px;
+  top: 230px;
 }
 
 .line-bullet {
@@ -143,15 +145,16 @@ body {
   background-color: lightgray;
   display: flex;
   flex-direction: row;
-  padding: 40px 30px;
   position: absolute;
   top: 245px;
+  padding: 105px 30px;
+  bottom: 81px;
 }
 
 .summary-description {
   font-family: 'Montserrat',sans-serif;
-  margin-top: 5px;
   line-height: 25px;
+  margin-top: 20px;
 }
 
 /*Animation Scroll down*/
@@ -221,12 +224,15 @@ body {
   background-color: red;
   color: white;
   font-family: 'Montserrat',sans-serif;
-  font-size: 15px;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
 .section-subheading {
   color: red;
   font-family: 'Montserrat',sans-serif;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .featured-projects-section {
@@ -238,9 +244,18 @@ body {
   padding: 20px;
 }
 
+.back-link {
+  margin-right: 285px;
+}
+
 a {
   text-decoration: none;
   color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: unset;
 }
 
 .featured-projects-section h3 {
@@ -264,7 +279,7 @@ a {
 
 .overlayFade {
   width: 100%;
-  height: 100%;
+  height: 87%;
   top: 0;
   left: 0;
 }
@@ -308,6 +323,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  font-weight: bold;
 }
 
 .projects-paragraph {
@@ -328,6 +344,7 @@ a {
   font-size: 10px;
   text-align: center;
   display: inline;
+  margin-left: 5px;
 }
 
 .other-projects {
@@ -359,11 +376,12 @@ a {
 
 .date-heading {
   font-family: 'Roboto',sans-serif;
-  font-size: 12px;
   color: red;
   margin-left: 5px;
   margin-bottom: 0;
   padding-right: 10px;
+  font-size: 15px;
+  margin-top: 15px;
 }
 
 .latest-thought-container {
@@ -392,6 +410,7 @@ a {
   font-weight: bold;
   margin-left: 40px;
   font-size: 20px;
+  margin-right: 56px;
 }
 
 .thoughts-section p {
@@ -410,9 +429,13 @@ a {
 .more-thoughts-subsection h3 {
   font-family: 'Roboto',sans-serif;
   font-weight: bold;
-  margin-right: 42px;
   margin-bottom: 0;
   margin-top: 2px;
+  font-size: 18px;
+}
+
+.more-thoughts-paragraph {
+  margin-top: 15px;
 }
 
 .skills {
@@ -502,7 +525,7 @@ a {
 }
 
 .contact-section {
-  background-color: blue;
+  background-color:#007bff;
 }
 
 .contact-heading {
@@ -510,6 +533,7 @@ a {
   color: #FFFFFF;
   text-align: center;
   padding-top: 30px;
+  margin-bottom: 20px;
 }
 
 .contact-name {
@@ -517,7 +541,7 @@ a {
   font-family: 'Roboto',sans-serif;
   color: #FFFFFF;
   text-align: center;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .contact-info {
@@ -530,7 +554,8 @@ a {
 .contact-section a {
   display: block;
   text-decoration: none;
-  padding-bottom: 50px;
+  padding-bottom: 12px;
+  font-size: 15px;
 }
 
 .contact-form {
@@ -543,11 +568,13 @@ a {
 
 .contact-form-header {
   font-family: 'Roboto',sans-serif;
-  color: #FFFFFF;
+  color: black;
   text-align: center;
   padding-top: 30px;
   font-size: 15px;
   font-weight: normal;
+  line-height: 25px;
+  margin: 10px;
 }
 
 .contact-form label {
@@ -558,6 +585,10 @@ a {
 .contact-form input {
   width: 200px;
   height: 25px;
+}
+
+.telephone-input {
+  -webkit-appearance: none;
 }
 
 .contact-form-text-area {

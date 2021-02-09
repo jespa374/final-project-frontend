@@ -5,6 +5,8 @@ import HotPink from 'assets/hot-pink.jpg';
 import Bubbles from 'assets/bubbles.jpg';
 import Red from 'assets/red.jpg';
 
+// how to increase the height of the top section?
+
 const TopSectionCarousel = () => {
 
     return (

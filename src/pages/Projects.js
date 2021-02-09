@@ -46,7 +46,6 @@ const Projects = () => {
 					/>
 				)}
 			</section>	
-		))
 	</>	
 )};
 

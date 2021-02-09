@@ -69,7 +69,8 @@ const Contact = () => {
 									type="number" 
 									placeholder="Telephone" 
 									value={telephone}
-									onChange={e => setTelephone(e.target.value)}	
+									onChange={e => setTelephone(e.target.value)}
+									className="telephone-input"	
 								/>
 								<label>Subject</label>
 								<input 
