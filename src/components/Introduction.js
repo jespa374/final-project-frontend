@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 import TopSectionCarousel from 'components/TopSectionCarusel';
 import ProfileCard from 'components/ProfileCard';
 import LineBullet from 'assets/line-bullet.svg';
+import 'lib/IntroductionStyles.css';
 
 const Introduction = () => {
     

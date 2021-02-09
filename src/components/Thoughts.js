@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { THOUGHTS_URL } from '../urls';
 import ThoughtCard from '../components/ThoughtCard';
 import MoreThoughts from './MoreThoughts';
+import 'lib/ThoughtsStyles.css';
 
 const Thoughts = () => {
 	const [thoughts, setThoughts] = useState([]);

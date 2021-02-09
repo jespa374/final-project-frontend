@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { PROJECTS_URL } from '../urls';
 import FeaturedProjects from '../components/FeaturedProjects';
 import OtherProjects from '../components/OtherProjects';
+import 'lib/ProjectsStyles.css';
 
 const Projects = () => {
 	const [projects, setProjects] = useState([]);

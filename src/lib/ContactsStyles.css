@@ -1,0 +1,97 @@
+.contact-section {
+  background-color:#007bff;
+}
+
+.contact-heading {
+  font-family: 'Roboto',sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+.contact-name {
+  font-weight: bold;
+  font-family: 'Roboto',sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+}
+
+.contact-info {
+  font-family: 'Roboto',sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+}
+
+.contact-section a {
+  display: block;
+  text-decoration: none;
+  padding-bottom: 12px;
+  font-size: 15px;
+}
+
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightpink;
+}
+
+.contact-form-header {
+  font-family: 'Roboto',sans-serif;
+  color: black;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 25px;
+  margin: 10px;
+}
+
+.contact-form label {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.contact-form input {
+  width: 200px;
+  height: 25px;
+}
+
+.telephone-input {
+  -webkit-appearance: none;
+}
+
+.contact-form-text-area {
+  width: 100%;
+  border: 1px solid black;
+  background: white;
+}
+
+.contact-form ul {
+  list-style-type: none;
+}
+
+/*Tablet view********************************************************************************************/
+@media (min-width: 768px) and (max-width: 899px) {
+  .contact-name {
+    font-size: 15px;
+    }
+  .contact-info {
+    font-size: 15px;
+    }
+}
+
+/*Desktop view**************************************************************************************/
+
+@media (min-width: 900px) {
+  .contact-name {
+    font-size: 17px;
+}
+.contact-info {
+    font-size: 17px;
+}
+}

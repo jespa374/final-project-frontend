@@ -1,0 +1,144 @@
+.thoughts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 450px;
+}
+
+.thoughts-image {
+  margin-top: 40px;
+  width: 70%;
+  height: 150px;
+}
+
+.date-heading {
+  font-family: 'Roboto',sans-serif;
+  color: red;
+  margin-left: 5px;
+  margin-bottom: 0;
+  padding-right: 10px;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.latest-thought-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-thought {
+  width: 75%;
+}
+
+.latest-thought-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.latest-thought-text-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+.latest-thought-card h3 {
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+  margin-left: 40px;
+  font-size: 20px;
+  margin-right: 56px;
+}
+
+.thoughts-section p {
+  font-family: 'Roboto',sans-serif;
+  font-size: 13px;
+  width: 75%;
+}
+
+.more-thoughts-subsection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.more-thoughts-subsection h3 {
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 2px;
+  font-size: 18px;
+}
+
+.more-thoughts-paragraph {
+  margin-top: 15px;
+}
+
+/*Tablet view********************************************************************************************/
+@media (min-width: 768px) and (max-width: 899px) {
+  .thoughts p {
+    font-size: 15px;
+    }
+  
+  .date-heading {
+    font-size: 15px;
+    }
+  
+  .latest-thought-container {
+    display: flex;
+    flex-direction: row;
+    }
+  
+  .latest-thought-card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    }
+  
+  .more-thoughts-subsection {
+    width: 100%;
+    }
+  
+  .more-thoughts-subsection h3 {
+    text-align: center;
+    }
+}
+
+/*Desktop view**************************************************************************************/
+@media (min-width: 900px) {
+  .thoughts-image {
+    width: 300px;
+    height: 200px;
+}
+
+.thoughts p {
+    font-size: 17px;
+    width: 50%;
+}
+
+.latest-thought-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.latest-thought-card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.date-heading {
+    font-size: 17px;
+}
+
+.more-thoughts-subsection {
+    width: 100%;
+}
+
+.more-thoughts-subsection h3 {
+  text-align: center;
+}
+
+}

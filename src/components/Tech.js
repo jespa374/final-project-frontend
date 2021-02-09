@@ -1,5 +1,9 @@
 import React from 'react';
 
+import 'lib/TechStyles.css';
+
+// The tech section is behind the summary section. how to show it?
+
 const Tech = () => {
 
 	return (

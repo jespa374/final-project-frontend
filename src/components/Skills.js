@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import SkillCard from '../components/SkillCard';
 import { SKILLS_URL } from '../urls';
+import 'lib/SkillsStyles.css';
 
 const Skills = () => {
 	const [skills, setSkills] = useState([]);

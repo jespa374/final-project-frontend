@@ -1,6 +1,8 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 
+import 'lib/InformationStyles.css';
+
 const Information = () => {
 
 	return (
