@@ -39,21 +39,18 @@ const ProfileCard = () => {
         <div className="profile-card-text-container">
           <h1 
             className="heading-portfolio" 
-            tabindex="0">PORTFOLIO: 
-            <span className="name">
-              JESSICA PANDITHA
-            </span>
+            tabindex="0">PORTFOLIO
           </h1>
           <h1 
-            className="heading-frontend-developer" 
-            tabindex="0">frontend developer
+            className="heading-name" 
+            tabindex="0">Jessica Panditha
           </h1>
           <h2 
             className="heading-system-specialist"
             tabindex="0">
             <Typewriter 
               options={{
-              strings: ["+ system specialist with business administration background", "Fullstack developer in the making"],
+              strings: ["frontend developer", "+ system specialist with business administration background", "Fullstack developer in the making"],
               autoStart: true,
               loop: true,
               delay: 50

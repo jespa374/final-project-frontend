@@ -13,21 +13,21 @@ const TopSectionCarousel = () => {
       <>
       <section className="carousel-container">
         <Carousel className="carousel">
-          <Carousel.Item interval={1000}>
+          <Carousel.Item className="carousel-item" interval={1000}>
             <img
               className="top-section"
               src={HotPink}
               alt="First slide"
             />
           </Carousel.Item>
-          <Carousel.Item interval={500}>
+          <Carousel.Item className="carousel-item" interval={500}>
             <img
               className="top-section"
               src={Red}
               alt="Second slide"
             />
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item className="carousel-item">
             <img
               className="top-section"
               src={Bubbles}

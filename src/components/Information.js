@@ -38,7 +38,7 @@ const Information = () => {
 				</a>
 			</div>
 			<button 
-				className="back-to-top-button" 
+				className="button" 
 				onClick={() => scroll.scrollToTop()}>
 				Back to top
 			</button>

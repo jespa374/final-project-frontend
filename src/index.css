@@ -14,6 +14,7 @@ code {
 
 body {
   margin: 0;
+  min-height: 100vh;
 }
 
 .main {
@@ -30,9 +31,10 @@ p {
 }
 
 .nav-tab {
-  font-size: 20px;
+  font-size: 16px;
   margin: 10px;
   text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .section-heading {
@@ -57,6 +59,14 @@ p {
   margin-right: 285px;
 }
 
+.button{
+  background-color: #cc3b62;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  height: 48px;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -72,9 +82,6 @@ a:hover {
   justify-content: center;
 }
 
-.back-to-top-button {
-  margin-top: 10px;
-}
 /*Tablet view********************************************************************************************/
 @media (min-width: 768px) and (max-width: 899px) {
   

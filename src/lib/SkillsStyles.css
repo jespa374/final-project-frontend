@@ -5,6 +5,7 @@
 .section-heading-container {
   display: flex;
   justify-content: center;
+  padding-top: 30px;
 }
 
 .skill-card-container {

@@ -1,5 +1,5 @@
 .featured-projects-section {
-  background-color: lightgray;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,7 +97,7 @@
 }
 
 .other-projects {
-  background-color: lightgray;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center; 

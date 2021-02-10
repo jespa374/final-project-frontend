@@ -57,7 +57,6 @@ const Contact = () => {
 								<input 
 									required
 									type="text" 
-									placeholder="Name" 
 									value={name}
 									onChange={e => setName(e.target.value)}
 								/>
@@ -65,14 +64,12 @@ const Contact = () => {
 								<input
 									required 
 									type="email" 
-									placeholder="E-mail" 
 									value={email}
 									onChange={e => setEmail(e.target.value)}	
 								/>
 								<label>Telephone</label>
 								<input
 									type="number" 
-									placeholder="Telephone" 
 									value={telephone}
 									onChange={e => setTelephone(e.target.value)}
 									className="telephone-input"	
@@ -80,7 +77,6 @@ const Contact = () => {
 								<label>Subject</label>
 								<input 
 									type="text" 
-									placeholder="Subject" 
 									value={subject}
 									onChange={e => setSubject(e.target.value)}
 								/>
@@ -89,12 +85,11 @@ const Contact = () => {
 									className="contact-form-text-area" 
 									cols="50" 
 									rows="4" 
-									placeholder="Type your message here"
 									value={message}
 									onChange={e => setMessage(e.target.value)}
 								>
 								</textarea>
-								<input type="submit" onClick={() => scroll.scrollToTop()}/>
+								<input className="button" type="submit" onClick={() => scroll.scrollToTop()}/>
 							</form>
 						</div>
 				</footer>

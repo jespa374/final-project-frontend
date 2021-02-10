@@ -8,8 +8,7 @@
 
 .thoughts-image {
   margin-top: 40px;
-  width: 70%;
-  height: 150px;
+  width: 100%;
 }
 
 .date-heading {
@@ -27,15 +26,12 @@
   flex-direction: column;
 }
 
-.latest-thought {
-  width: 75%;
-}
-
 .latest-thought-card {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .latest-thought-text-container {
   display: flex;
@@ -46,9 +42,7 @@
 .latest-thought-card h3 {
   font-family: 'Roboto',sans-serif;
   font-weight: bold;
-  margin-left: 40px;
   font-size: 20px;
-  margin-right: 56px;
 }
 
 .thoughts-section p {
