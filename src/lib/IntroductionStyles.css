@@ -7,10 +7,10 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-right: 30px;
   position: absolute;
   right: 0;
-  top: 12px;
+  top: 13px;
+  margin-right: 10px;
 }
 
 .social-media-icon {
@@ -100,10 +100,10 @@
   height: 135px;
   border: 3px solid white;
   position: absolute;
-  bottom: -25px;
   z-index: 1;
   right: 0;
-  top: 230px;
+  top: 235px;
+  right: 2px;
 }
 
 .line-bullet {
@@ -114,7 +114,7 @@
   background-color: #F4F4F4;
   display: flex;
   flex-direction: row;
-  padding: 105px 30px;
+  padding: 50px 30px;
 }
 
 .summary-description {
@@ -131,7 +131,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-  margin-top: 109px;
+  margin-top: 150px;
 }
 
 .down-arrow {

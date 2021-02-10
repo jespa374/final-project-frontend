@@ -11,6 +11,10 @@
   margin-top: 20px;
 }
 
+.tech p {
+  margin-left: 10px;
+}
+
 /*Tablet view********************************************************************************************/
 @media (min-width: 768px) and (max-width: 899px) {
   .tech {
