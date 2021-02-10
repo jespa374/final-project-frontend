@@ -22,9 +22,13 @@ const Contact = () => {
 		.then((res => {
 			if (!res.ok) {
 				throw new Error ('Could not post contact');
-			} return res.json;
-			//check why you can't empty the fields doing
-			//setMessage('') 
+			} 
+				setName('');
+				setEmail('');
+				setTelephone('');
+				setSubject('');
+				setMessage(''); 
+				return res.json();
 		}));
 	};
 
