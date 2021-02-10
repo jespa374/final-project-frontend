@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll'; 
 
-import {MESSAGES_URL} from '../urls';
+import { MESSAGES_URL } from '../urls';
 import 'lib/ContactsStyles.css';
 
 const Contact = () => {
