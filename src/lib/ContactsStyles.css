@@ -66,8 +66,10 @@
   border: none;
 }
 
-.telephone-input {
+.telephone-input::-webkit-outer-spin-button,
+.telephone-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  margin: 0;
 }
 
 .contact-form-container{
@@ -85,16 +87,28 @@
   list-style-type: none;
 }
 
-
-
 /*Tablet view********************************************************************************************/
 @media (min-width: 768px) and (max-width: 899px) {
+  
+  .contact-section {
+    height: 235px;
+  }
+
+  .contact-section a {
+    font-size: 17px;
+  }
+
   .contact-name {
-    font-size: 15px;
-    }
+    font-size: 17px;
+  }
+
   .contact-info {
-    font-size: 15px;
-    }
+    font-size: 17px;
+  }
+
+  .contact-form-header {
+    font-size: 17px;
+  }
 }
 
 /*Desktop view**************************************************************************************/
@@ -102,8 +116,8 @@
 @media (min-width: 900px) {
   .contact-name {
     font-size: 17px;
-}
-.contact-info {
+  }
+  .contact-info {
     font-size: 17px;
-}
+  }
 }

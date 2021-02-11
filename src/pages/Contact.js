@@ -53,47 +53,51 @@ const Contact = () => {
 				<div className="contact-form-container">
 					<form className="contact-form" onSubmit={postContact}>
 						<h2 className="contact-form-header">If you would like to know more don't hesitate to contact me by filling the following form</h2>
-								<label>Name</label>
-								<input 
-									required
-									type="text" 
-									value={name}
-									onChange={e => setName(e.target.value)}
-								/>
-								<label>E-mail</label>
-								<input
-									required 
-									type="email" 
-									value={email}
-									onChange={e => setEmail(e.target.value)}	
-								/>
-								<label>Telephone</label>
-								<input
-									type="number" 
-									value={telephone}
-									onChange={e => setTelephone(e.target.value)}
-									className="telephone-input"	
-								/>
-								<label>Subject</label>
-								<input 
-									type="text" 
-									value={subject}
-									onChange={e => setSubject(e.target.value)}
-								/>
-								<label>Message</label>
-								<textarea 
-									className="contact-form-text-area" 
-									cols="50" 
-									rows="4" 
-									value={message}
-									onChange={e => setMessage(e.target.value)}
-								>
-								</textarea>
-								<input className="button" type="submit" onClick={() => scroll.scrollToTop()}/>
-							</form>
-						</div>
-				</footer>
-			</>
-		)};
+						<label>Name</label>
+						<input 
+							required
+							type="text" 
+							value={name}
+							onChange={e => setName(e.target.value)}
+						/>
+						<label>E-mail</label>
+						<input
+							required 
+							type="email" 
+							value={email}
+							onChange={e => setEmail(e.target.value)}	
+						/>
+						<label>Telephone</label>
+						<input
+							type="number" 
+							value={telephone}
+							onChange={e => setTelephone(e.target.value)}
+							className="telephone-input"	
+						/>
+						<label>Subject</label>
+						<input 
+							type="text" 
+							value={subject}
+							onChange={e => setSubject(e.target.value)}
+						/>
+						<label>Message</label>
+						<textarea 
+							className="contact-form-text-area" 
+							cols="50" 
+							rows="4" 
+							value={message}
+							onChange={e => setMessage(e.target.value)}
+						>
+						</textarea>
+						<input 
+							className="button" 
+							type="submit" 
+							onClick={() => scroll.scrollToTop()}
+						/>
+					</form>
+				</div>
+			</footer>
+		</>
+	)};
 
 export default Contact;

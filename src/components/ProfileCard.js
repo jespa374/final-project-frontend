@@ -4,6 +4,7 @@ import Typewriter from 'typewriter-effect';
 import ProfilePic from 'assets/profilepic.png';
 
 const ProfileCard = () => {
+  
   return (
     <>
       <div className="social-media-container">
@@ -39,18 +40,21 @@ const ProfileCard = () => {
         <div className="profile-card-text-container">
           <h1 
             className="heading-portfolio" 
-            tabindex="0">PORTFOLIO
+            tabindex="0"
+          >PORTFOLIO
           </h1>
           <h1 
             className="heading-name" 
-            tabindex="0">Jessica Panditha
+            tabindex="0"
+          >Jessica Panditha
           </h1>
           <h2 
             className="heading-system-specialist"
-            tabindex="0">
+            tabindex="0"
+          >
             <Typewriter 
               options={{
-              strings: ["frontend developer", "+ system specialist with business administration background", "Fullstack developer in the making"],
+              strings: ["frontend developer", "system specialist with business administration background", "Fullstack developer in the making"],
               autoStart: true,
               loop: true,
               delay: 50

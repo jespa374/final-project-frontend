@@ -84,11 +84,6 @@
   letter-spacing: 1.2px;
 }
 
-.name {
-  font-family: 'Roboto',sans-serif;
-  font-weight: 1px;
-}
-
 .heading-name {
   font-family: 'Montserrat',sans-serif;
   font-size: 40px;
@@ -237,7 +232,7 @@
    margin-top: 5px;
    line-height: 25px;
    padding-top: 20px;
-   width: 85%;
+   width: 100%;
    align-items: flex-end;
    }
 
@@ -249,42 +244,62 @@
 
 /*Desktop view**************************************************************************************/
 @media (min-width: 900px) {
+
+  .carousel-container {
+    height: 44vh;
+  }
+
+  .carousel-indicators {
+    margin-left: 3%;
+    bottom: -22px;
+  }
+
   .top-section {
     height: 400px;
   }
 
 .heading-portfolio {
-    font-size: 15px;
+    font-size: 20px;
 }
 .heading-name {
-    font-size: 40px;
+    font-size: 50px;
   }
 
 .heading-system-specialist {
-    font-size: 23px;
+    font-size: 25px;
     width: 50%;
+  }
+
+  .icon-linkedin, .icon-github, .icon-stackoverflow {
+    width: 60px;
+    height: 60px;
   }
 
 .profile-image {
     width: 200px;
     height: 200px;
-    right: 100px;
+    right: 19px;
     bottom: -16px;
+    top: 216px;
 }
 
 .summary-section {
     height: 200px;
-    align-items: flex-end;
+    align-items: unset;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
  }
 
 .summary-description {
     font-family: 'Montserrat',sans-serif;
-    width: 85%;
+    width: 100%;
     align-items: flex-end;
     line-height: 30px;
     font-size: 18px;
-    padding: 20px;
+ }
+
+ .down-arrow-button {
+  bottom: 25%;
  }
 }

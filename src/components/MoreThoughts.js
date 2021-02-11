@@ -9,5 +9,3 @@ const MoreThoughts = ({...thought }) => {
 	)};
 
 export default MoreThoughts;
-
-//replace buttons with a hrefs in line 7 for more thoughts links and for the see more button when more thoughts are added
