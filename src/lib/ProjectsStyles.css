@@ -117,6 +117,10 @@
  .project-card {
    width: 70%
    }
+
+   .overlayFade, .overlay, .project-image {
+    height: 100%;
+  }
  
  .projects-paragraph {
    font-size: 16px;
