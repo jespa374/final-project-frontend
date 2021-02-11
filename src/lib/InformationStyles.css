@@ -38,3 +38,14 @@
 }
 
 /* Add media queries for tablet and desktop */
+
+/*Tablet view********************************************************************************************/
+@media (min-width: 768px) and (max-width: 899px) {
+
+.icon-linkedin-red, .icon-github-red, .icon-stackoverflow-red {
+  width: 50px;
+  height: 50px;
+}
+
+}
+  

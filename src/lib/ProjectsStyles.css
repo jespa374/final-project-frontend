@@ -111,7 +111,7 @@
    }
  
  .projects-subheading {
-   font-size: 15px;
+   font-size: 16px;
    }
  
  .project-card {
@@ -119,8 +119,12 @@
    }
  
  .projects-paragraph {
-   font-size: 15px;
+   font-size: 16px;
    }
+
+   .project-title {
+    font-size: 20px;
+  }
  
  .other-projects {
    padding: 30px;
