@@ -71,6 +71,7 @@
 
 /*Tablet view********************************************************************************************/
 @media (min-width: 768px) and (max-width: 899px) {
+
   .thoughts p {
     font-size: 16px;
   }
@@ -112,35 +113,34 @@
   .thoughts-image {
     min-height: 267px;
     height: 350px;
-}
+  }
 
-.thoughts p {
+  .thoughts p {
     font-size: 17px;
     width: 100%;
-}
+  }
 
-.latest-thought-container {
+  .latest-thought-container {
     display: flex;
     flex-direction: row;
-}
+  }
 
-.latest-thought-card {
+  .latest-thought-card {
     display: flex;
     flex-direction: column;
     width: 50%;
-}
+  }
 
-.date-heading {
+  .date-heading {
     font-size: 17px;
-}
+  }
 
 .more-thoughts-subsection {
     width: 100%;
-}
+  }
 
 .more-thoughts-subsection h3 {
-  text-align: center;
-  font-size: 28px;
-}
-
+    text-align: center;
+    font-size: 28px;
+  }
 }

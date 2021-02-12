@@ -48,23 +48,23 @@
 
 /*Tablet view********************************************************************************************/
 @media (min-width: 768px) and (max-width: 899px) {
+
   .skill-card {
     width: 25%
-    }
-  
+  }
   
   .skills h4 {
     font-size: 16px;
-    }
+  }
   
   .skills li {
     font-size: 16px;
-    }
-  
+  }  
 }
 
 /*Desktop view**************************************************************************************/
 @media (min-width: 900px) {
+  
   .skill-card {
     width: 25%
   }
