@@ -89,7 +89,6 @@
 
 /*Tablet view********************************************************************************************/
 @media (min-width: 768px) and (max-width: 899px) {
-  
   .contact-section {
     height: 235px;
   }
@@ -112,8 +111,11 @@
 }
 
 /*Desktop view**************************************************************************************/
-
 @media (min-width: 900px) {
+  .contact-section {
+    height: 247px;
+  }
+
   .contact-name {
     font-size: 17px;
   }

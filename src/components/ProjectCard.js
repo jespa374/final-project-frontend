@@ -15,7 +15,7 @@ const ProjectCard = ({
 				<div className="project-content-container">
 					<div className="overlay-container">
 						<img className="project-image" src={projectImage} alt="project movie site"/>
-						<div className="overlay overlayFade">
+						<div className="overlay overlay-fade">
 							<p className="project-title">{projectImageText}</p>
 						</div>
 					</div>

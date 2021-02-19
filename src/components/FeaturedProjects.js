@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 const FeaturedProjects = ({ ...project }) => {
 
 	return (
-			<>
+      <>
 				<ProjectCard 
 					projectTitle={project.title}
 					projectImage={project.imageUrl}

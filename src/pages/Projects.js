@@ -20,7 +20,7 @@ const Projects = () => {
 
 	return (
 		<>
-			<section className="featured-projects-section">
+      <section className="featured-projects-section">
 				<Link className="back-link" to="/" exact="true">
 					<svg 
 						xmlns="http://www.w3.org/2000/svg" 
@@ -32,22 +32,22 @@ const Projects = () => {
 				</Link>
 				<h2 class="section-heading" tabindex="0">FEATURED PROJECTS</h2>
 				{projects.filter(project => project.isFeatured).map(project => 
-					<FeaturedProjects 
+          <FeaturedProjects 
 						key={project._id}
 						{...project}
 					/>)
 				}
 			</section>
 			<section className="other-projects">
-				<h3 className="section-subheading" tabindex="0">OTHER PROJECTS</h3>
-				{projects.filter(project => !project.isFeatured).map(project =>
-					<OtherProjects 
-						key={project._id}
-						{...project}
-					/>
-				)}
-			</section>	
-	</>	
-)};
+        <h3 className="section-subheading" tabindex="0">OTHER PROJECTS</h3>
+        {projects.filter(project => !project.isFeatured).map(project =>
+          <OtherProjects 
+            key={project._id}
+            {...project}
+          />
+        )}
+      </section>	
+	  </>	
+  )};
 
 export default Projects;
