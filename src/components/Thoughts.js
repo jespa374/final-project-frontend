@@ -6,41 +6,41 @@ import MoreThoughts from './MoreThoughts';
 import 'lib/ThoughtsStyles.css';
 
 const Thoughts = () => {
-	const [thoughts, setThoughts] = useState([]);
+  const [thoughts, setThoughts] = useState([]);
 
-	const getThoughts = () => {
-		fetch(THOUGHTS_URL)
-		.then(res => res.json())
-		.then(json => setThoughts(json))
-		.catch(error => console.error(error)) 
-	};
+  const getThoughts = () => {
+    fetch(THOUGHTS_URL)
+    .then(res => res.json())
+    .then(json => setThoughts(json))
+    .catch(error => console.error(error)) 
+  };
 
-	useEffect(getThoughts, []);
-	
-	return (
-		<section className="thoughts">
-			<h2 className="section-heading" tabindex="0">MY THOUGHTS</h2>
-			<div className="latest-thought-container">
-				{thoughts.filter(thought => thought.isFeatured).map(thought =>
-					<ThoughtCard 
-						key={thought._id}
-						{...thought}
-					/>
-				)}
-			</div>
-			<article className="more-thoughts-subsection">
-				<h3 className="section-subheading" tabindex="0">MORE THOUGHTS</h3>
-				{thoughts.filter(thought => !thought.isFeatured).map(thought =>
-					<MoreThoughts 
-						key={thought._id}
-						{...thought}
-					/>
-				)}
-			</article>	
-		</section>
-	)};
+  useEffect(getThoughts, []);
+  
+  return (
+    <section className="thoughts">
+      <h2 className="section-heading" tabindex="0">MY THOUGHTS</h2>
+      <div className="latest-thought-container">
+        {thoughts.filter(thought => thought.isFeatured).map(thought =>
+          <ThoughtCard 
+            key={thought._id}
+            {...thought}
+          />
+        )}
+      </div>
+      <article className="more-thoughts-subsection">
+        <h3 className="section-subheading" tabindex="0">MORE THOUGHTS</h3>
+        {thoughts.filter(thought => !thought.isFeatured).map(thought =>
+          <MoreThoughts 
+            key={thought._id}
+            {...thought}
+          />
+        )}
+      </article>	
+    </section>
+  )};
 
 
 export default Thoughts;
 
-	
+  

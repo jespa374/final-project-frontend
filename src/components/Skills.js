@@ -5,31 +5,31 @@ import { SKILLS_URL } from '../urls';
 import 'lib/SkillsStyles.css';
 
 const Skills = () => {
-	const [skills, setSkills] = useState([]);
+  const [skills, setSkills] = useState([]);
 
-	const getSkills = () => {
-		fetch(SKILLS_URL)
-		.then(res => res.json())
-		.then(json => setSkills(json))
-		.catch(error => console.error(error)) 
-	};
+  const getSkills = () => {
+    fetch(SKILLS_URL)
+    .then(res => res.json())
+    .then(json => setSkills(json))
+    .catch(error => console.error(error)) 
+  };
 
-	useEffect(getSkills, []);
+  useEffect(getSkills, []);
 
-	return (
-		<section className="skills">
-			<div className="section-heading-container">
-				<h2 className="section-heading" tabindex="0">SKILLS</h2>
-			</div>
-			<div className="skill-card-container">
-				{skills.map(skill => 
-					<SkillCard 
-						key={skill._id}
-						{...skill}
-					/>
-				)}
-			</div>		
-		</section>	
-	)};
+  return (
+    <section className="skills">
+      <div className="section-heading-container">
+        <h2 className="section-heading" tabindex="0">SKILLS</h2>
+      </div>
+      <div className="skill-card-container">
+        {skills.map(skill => 
+          <SkillCard 
+            key={skill._id}
+            {...skill}
+          />
+        )}
+      </div>		
+    </section>	
+  )};
 
 export default Skills;
